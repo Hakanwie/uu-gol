@@ -13,4 +13,4 @@ install:
 - pip install pytest
 
 script:
-gol.py
+- gol.py
