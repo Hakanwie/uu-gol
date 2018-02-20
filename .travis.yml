@@ -12,6 +12,3 @@ install:
 - pip install scipy
 - pip install pytest
 - pip install matplotlib
-
-script:
-- python gol.py
