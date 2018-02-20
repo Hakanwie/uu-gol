@@ -31,28 +31,6 @@ def r_pentomino(size):
     return board
 
 
-# def event(x, y, board):
-
-#     # Check living cells in surrounding neighbourhood #
-#     living_neighbours = np.sum(board[x - 1:x + 2, y - 1: y + 2])
-
-#     if board[x, y] and ((living_neighbours < 3) or (living_neighbours > 4)):
-#         return 0
-#     elif living_neighbours == 3:
-#         return 1
-
-#     return board[x, y]
-
-
-# def update_board(board):
-
-#     temp = board.copy()
-#     for x in range(len(board)):
-#         for y in range(len(board)):
-#             temp[x, y] = event(x, y, board)
-
-#     return temp
-
 
 def progress(board):
     kernel = np.array([[1, 1, 1], [1, 0, 1], [1, 1, 1]])
