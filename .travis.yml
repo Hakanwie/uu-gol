@@ -12,3 +12,7 @@ install:
 - pip install scipy
 - pip install pytest
 - pip install matplotlib
+- pip install pytest
+
+script:
+-py.test
