@@ -4,13 +4,13 @@ from scipy.ndimage import convolve
 
 
 def cross(size):
-    # add 2 to handle boarders #
+    
     s = np.zeros([size, size])
     c = int(size / 2 - 1)
     s[:, c - 1:c + 2] = 1
     s[c - 1:c + 2, :] = 1
 
-    # pad boarders #
+    # set boarders to zero #
     s[:, 0] = 0
     s[:, size - 1] = 0
     s[0, :] = 0
@@ -33,13 +33,17 @@ def r_pentomino(size):
 
 
 def progress(board):
+    
+    # Convolve with kernel to check state of neighbours
     kernel = np.array([[1, 1, 1], [1, 0, 1], [1, 1, 1]])
     c = convolve(board, kernel, mode='constant')
-
+    
+    # Progress dead cells
     a = (1 - board) * c
     a[a != 3] = 0
     a[a == 3] = 1
-
+    
+    # Progress living cells
     b = board * c
     b[np.where(np.logical_or(b < 2, b > 3))] = 0
     b[b != 0] = 1
