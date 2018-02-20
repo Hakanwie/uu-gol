@@ -11,3 +11,6 @@ install:
 - pip install numpy
 - pip install scipy
 - pip install pytest
+
+script:
+gol.py
