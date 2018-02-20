@@ -1,0 +1,19 @@
+# This project has python as the main language
+language: python
+
+# Run things with both these version of Python
+python:
+- "2.7"
+- "3.6"
+
+# Don't send email notifications for everything...
+notifications:
+email: false
+
+# We get a bare virtual machine
+# We need to install our dependencie
+s
+install:
+- pip install numpy
+- pip install scipy
+- pip install pytest
