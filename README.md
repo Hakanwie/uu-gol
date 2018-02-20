@@ -11,4 +11,4 @@ import gol
 
 board = gol.r_pentomino(size = 100)
 
-animate_gol(board, nr_of_time_steps = 100)
+gol.animate_gol(board, nr_of_time_steps = 100)
