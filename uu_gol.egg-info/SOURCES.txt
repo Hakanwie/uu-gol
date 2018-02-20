@@ -1,7 +1,0 @@
-README.md
-gol.py
-setup.py
-uu_gol.egg-info/PKG-INFO
-uu_gol.egg-info/SOURCES.txt
-uu_gol.egg-info/dependency_links.txt
-uu_gol.egg-info/top_level.txt
