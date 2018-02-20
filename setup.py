@@ -9,4 +9,8 @@ setup(
     author='Håkan Wieslander',
     author_email='hakan.wieslander@it.uu.se',
     py_modules=['gol'],
+    install_requires=[
+          'numpy',
+          'scipy'
+      ],
     packages=[])
