@@ -5,7 +5,7 @@ setup(
     name = 'uu_game_of_life',
     version='1.0',
     description='Example package of game of life',
-    url='https://github.com/Hakanwie/uu-gol.git',
+    url='https://github.com/Hakanwie/uu_game_of_life.git',
     author='Håkan Wieslander',
     author_email='hakan.wieslander@it.uu.se',
     py_modules=['gol'],
